@@ -20,17 +20,17 @@ class Rps_test < Minitest::Test
     assert_equal("Rock crushes Scissors, well done player 2", @rock1.find_result)
   end
   def test_paper_win__1
-    assert_equal("Paper covers Rock", @paper.find_result)
+    assert_equal("Paper covers Rock, well done player 2", @paper.find_result)
   end
   def test_paper_win__2
-    assert_equal("Paper covers Rock", @paper1.find_result)
+    assert_equal("Paper covers Rock, well done player 1", @paper1.find_result)
   end
 
   def test_scissors_win__1
-    assert_equal("Scissors cuts Paper", @scissors.find_result)
+    assert_equal("Scissors cuts Paper, well done player 2", @scissors.find_result)
   end
   def test_scissors_win__2
-    assert_equal("Scissors cuts Paper", @scissors1.find_result)
+    assert_equal("Scissors cuts Paper, well done player 1", @scissors1.find_result)
   end
 
   def test_draw
